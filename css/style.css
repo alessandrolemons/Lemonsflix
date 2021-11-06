@@ -1,0 +1,544 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body{
+    min-width: 400px;
+    color: white;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+button, i, a{
+    cursor: pointer;
+    color: white;
+}
+
+option{
+    color: #757575;
+}
+
+header{
+    padding: 18px 13px;
+    width: 100%;
+}
+
+.linha-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    position: relative;
+    max-width: 1750px;
+}
+
+.linha-header figure{
+    width: 160px;
+    
+}
+
+.linha-header img{
+    width: 100%;
+    height: 100%;
+}
+
+.languages{
+    border: solid 1px white;
+    background-color: transparent;
+    color: white;
+    width: 100px;
+    height: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    margin-right: 10px;
+    border-radius: 2px;
+}
+
+.linha-header button{
+    width: 55px;
+    height: 25px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 3px;
+}
+
+ .gradient{
+    background-image:linear-gradient(to top,rgba(0,0,0,0) 50%,rgba(0,0,0,.7) 100%),
+    radial-gradient(50% 100%,rgba(0,0,0,0) 50%,
+    rgba(0,0,0,.7) 100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 750px;
+} 
+
+.home{
+    height: 750px;
+    background-size: cover;
+    display: block;
+}
+
+.bg-home figure{
+    height: 742px;
+    position: absolute;
+    width: 100%;
+}
+
+.bg-home img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.text{
+    position: relative;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    top: 20%;
+    line-height: 25px;
+}
+
+.text h1{
+    font-size: 1.75rem;
+}
+
+.text h2{
+    font-size: 1.125rem;
+    margin: 1rem auto;
+}
+
+.text h3{
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.linha-email{
+    width: 368px;
+    margin: 15px auto;
+}
+
+.inputEmail{
+    width: 360px;
+    height: 48px;
+    border-radius: 1px;
+    outline: none;
+    border: none;
+    padding: 8px;
+}
+
+.text button{
+    width: 115px;
+    height: 40px;
+    background-color: #e50914;
+    color: white;
+    border:none;
+    outline: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+
+.text button i{
+    color: white;
+    font-size: 12px;
+}
+
+.bg-home figure, .video-tv, .download, .flexWatch, .childs, .questions{
+    border-bottom: solid 8px #222;
+}
+
+.video-tv{
+    height: 468px;
+}
+
+.content-tv, .content-download, .content-flexWatch, .content-childs{
+    padding: 50px 15%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.text-tv{
+    width: 100%;
+}
+
+.text-tv h1, .download h1, .flexWatch h1, .childs h1{
+    font-size: 1.625rem;
+    margin-bottom: 12px;
+}
+
+.text-tv h2, .download h2, .flexWatch h2, .childs h2{
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.tv figure{
+    width: 360px;
+    height: 256px;
+}
+
+.tv img, .download img, .download-status img, .flexWatch img, .childs img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flexWatch video, .video-tv  video{
+    z-index: -1;
+    position: relative;
+}
+
+.video-tv video{
+    width: 267px;
+    height: 139px;
+    bottom: 202px;
+    object-fit: cover;
+}
+
+.download{
+    height: 460px;
+}
+
+.text-download{
+    width: 100%;
+    position: relative;
+}
+
+.download figure{
+    width: 360px;
+    height: 256px;
+    max-width: 600px;
+    max-height: 450px;
+}
+
+.download-status{
+    display: flex;
+    position: relative;
+    width: 268px;
+    height: 64px;
+    align-items: center;
+    padding: 9.5% 3%;
+    bottom: 80px;
+    left: 65px;
+    background-color: black;
+    border: solid 2px rgb(49, 49, 49);
+    border-radius: 10px;
+}
+    
+.download-status figure{
+    width: 59px;
+    height: 48px;
+}
+
+.download-status ul li{
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 600;
+}
+
+.download-status #download{
+    color: #0071eb;
+    font-size: .75em;
+    font-weight: 400;
+}
+
+.arrow-download figure{
+    margin-left: 20px;
+}
+
+.flexWatch{
+    height: 519px;
+}
+
+.text-watch{
+    width: 100%;
+}
+
+.flexWatch figure{
+    width: 360px;
+    height: 256px;
+    margin-top: 20px;
+}
+
+.flexWatch video{
+    width: 225px;
+    height: 130px;
+    bottom: 256px; 
+}
+
+.childs{
+    height: 464px;
+}
+
+.text-childs{
+    width: 100%;
+}
+
+.childs figure{
+    width: 360px;
+    height: 238px;
+    margin-top: 5px;
+} 
+
+.content-questions{
+    padding: 5% 0;
+}
+
+.titulo-sessao{
+    font-size: 1rem;
+    text-align: center;
+}
+
+.lista{
+    color: white;
+    font-family: sans-serif;
+    max-width: 815px;
+    border-radius: 2px;
+    margin: 20px auto;
+}
+
+.pergunta{
+    background-color: #303030;
+    margin-top: 5px;
+    text-align: left;
+    padding: 1.5rem;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo h3{
+    font-size: 1.1rem;
+    font-weight: 100;
+}
+
+.titulo:hover{
+    cursor: pointer;
+}
+
+.resposta{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-height: 0;
+    overflow: hidden;
+    transition: .8s; 
+}
+
+.pergunta.mostrar .resposta{
+    max-height: 100px;
+    transition:  1s ease; 
+}
+
+.titulo i{
+    font-size: 20px;
+}
+
+.titulo i.girar {
+    transform: rotate(-45deg);
+    transition: .5s ease;
+}
+
+.email-questions{
+    text-align: center;
+    padding: 0 5%;
+}
+
+.linha-email2{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.linha-email2 input{
+    height: 47px;
+    width: 360px;
+}
+
+.linha-email2 button{
+    width: 165px;
+    height: 47px;
+    background-color: #e50914;
+    border: none;
+}
+
+footer{
+    margin: 20px auto;
+    max-width: 826px;
+    }
+    
+footer h4{
+    padding: 0 5%;
+}
+    
+footer ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 35px 0;
+    width: 100%;
+    padding: 0 5%;
+    font-size: 11px;
+    color: #757575;
+}
+    
+footer ul li{
+    width: 25%;
+    margin-top: 5px;
+}
+    
+footer p{
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+
+@media screen and (min-width: 980px){
+
+.linha-header{
+    margin: 0 auto;
+}
+
+.linha-header figure{
+    width: 220px;
+}
+
+.header-right button{
+    width: 80px;
+    height: 34px;
+    font-weight: 600;
+}
+
+.header-right select{
+    width: 115px;
+    height: 35px;
+}
+
+.linha-email{
+    width: 715px;
+    height: 70px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.inputEmail{
+    height: 100%;
+    width: 500px;
+}
+
+.inputEmail button{
+    height: 100%;
+    width: 210px
+}
+
+.text h1{
+    font-size: 4rem;
+    line-height: 70px;
+}
+
+.text button{
+    font-size: 18px;
+    width: 184px;
+    height: 100%;
+    border-radius: 0;
+}
+
+.content-tv, .content-download, .content-flexWatch, .content-childs{
+    flex-wrap: nowrap;
+}
+
+.content-download, .content-childs{
+    flex-direction: row-reverse
+}
+
+.text-tv, .text-download, .text-watch{
+    padding: 20% 0;
+}
+
+.text-childs{
+    padding: 10% 0;
+}
+
+.text-tv, .text-download, .text-watch, .text-childs h1{
+    font-size: 40px;
+}
+
+.text-tv, .text-download, .text-watch, .text-childs h2{
+    font-size: 24px;
+}
+
+.tv figure{
+    width: 500px;
+    height: 350px;
+}
+
+.tv video{
+    width: 370px;
+    height: 205px;
+    bottom: 285px;
+}
+
+.cell > figure{
+    width: 400;
+    height: 350px;
+}
+
+.download-status{
+    width: 278px;
+    height: 74px;
+    bottom: 100px;
+    left: 43px;
+}
+
+.flexWatch figure{
+    width: 400px;
+    height: 330px;
+    margin-top: 60px;
+}
+
+.flexWatch img{
+    width: 100%;
+    height: 100%;
+}
+
+.flexWatch video{
+    width: 275px;
+    height: 160px;
+    bottom: 360px;
+}
+
+.text-childs{
+    width: 60%;
+}
+
+.childs figure{
+    width: 450px;
+    height: 320px;
+}
+
+.titulo-sessao{
+    font-size: 1.2rem;
+}
+
+.titulo h3{
+    font-size: 1.3rem;
+}
+
+}
+
